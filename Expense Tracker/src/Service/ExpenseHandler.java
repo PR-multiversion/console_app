@@ -31,7 +31,7 @@ public class ExpenseHandler {
     public void setUsers(){
         users = userRepo.getUsersFromFile();
     }
-    public void setTodos(String userName){
+    public void setExpenses(String userName){
         expense.put(userName,expenseRepo.getExpense(userName));
         ArrayList<Expense> lst = expense.get(userName);
         int index = lst.size() - 1;
