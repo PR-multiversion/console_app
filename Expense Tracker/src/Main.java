@@ -23,7 +23,7 @@ public class Main {
                     System.out.println("Password: ");
                     password = inp.nextLine();
                     if(expenseHandler.login(username, password)){
-                        expenseHandler.setTodos(username);
+                        expenseHandler.setExpenses(username);
                         expense(inp, expenseHandler, username);
                     }
                     break;
@@ -33,7 +33,7 @@ public class Main {
                     System.out.println("Password: ");
                     password = inp.nextLine();
                     if(expenseHandler.signUp(username,password)){
-                        expenseHandler.setTodos(username);
+                        expenseHandler.setExpenses(username);
                         expense(inp, expenseHandler, username);
                     }
                     break;
